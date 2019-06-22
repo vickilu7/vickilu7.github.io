@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Fun – Vicki Lu</title>
+
+    <link rel='stylesheet' href='../stylesheet.css'/>
+    <link rel="stylesheet" type="text/css" href='../fonts.css'/>
+    <link rel="icon" type="image/png" href="../cover-images/fav.png">
+
+    <link href="ninja-slider.css" rel="stylesheet" type="text/css" />
+    <script src="ninja-slider.js" type="text/javascript"></script>
+    <script>
+        function lightbox(idx) {
+            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = "block";
+
+            nslider.init(idx);
+
+            var fsBtn = document.getElementById("fsBtn");
+            fsBtn.click();
+        }
+
+        function fsIconClick(isFullscreen, ninjaSldr) { //fsIconClick is the default event handler of the fullscreen button
+            if (isFullscreen) {
+                ninjaSldr.parentNode.style.display = "none";
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <!--NAVIGATION BAR-->
+      <div class='navbar-container'>
+        <div class='menu'>
+          <div class='logo'><a href='../index.html'>Vicki Lu</a></div>
+          <div class='links'>
+            <div class='work'><a href='../index.html'>work</a></div>
+            <div class='play active'><a href='play.html'>fun</a></div>
+            <div class='about'><a href='../about.html'>me</a></div>
+            <div class='resume'><a href='../Resume.pdf' target='_blank'>resume</a></div>
+          </div>
+        </div>
+      </div>
+
+      <p style="width: 70%;margin: auto;padding-top:60px;">
+        These are just some fun ventures to help me learn new skills or done for various organizations.
+        I've also just been messing around with art mediums since I was around 5.
+        <a href='https://www.behance.net/gallery/62516995/Fine-Arts-Portfolio' target="_blank">Here's</a> some of my stuff over the years.
+      </p>
+      <!-- IMAGE GALLERY GRID -->
+      <div style="display:none; width: 70%; margin: auto;">
+          <div id="ninja-slider">
+              <div class="slider-inner">
+                  <ul>
+                      <li>
+                          <a class="ns-img" href="../cover-images/medium.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan purus.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/mycometrics.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/korean.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Duis fringilla arcu convallis urna commodo, et tempus velit posuere.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/bitcamp.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Quisque semper dolor sed neque consequat scelerisque at sed ex. Nam gravida massa.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/ideate19.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Proin non dui at metus suscipit bibendum.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/mpower.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Proin non dui at metus suscipit bibendum.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/ideate18.jpg"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Proin non dui at metus suscipit bibendum.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/hd-vid.gif"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Proin non dui at metus suscipit bibendum.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/catalyst.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Proin non dui at metus suscipit bibendum.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/carmadillo.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Proin non dui at metus suscipit bibendum.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/gradescope.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Proin non dui at metus suscipit bibendum.</p>
+                          </div>
+                      </li>
+                      <li>
+                          <a class="ns-img" href="../cover-images/constellations.png"></a>
+                          <div class="caption">
+                              <subtitle>Korean Program Party Poster</subtitle>
+                              <p>Proin non dui at metus suscipit bibendum.</p>
+                          </div>
+                      </li>
+                  </ul>
+                  <div id="fsBtn" class="fs-icon" title="Expand/Close"></div>
+              </div>
+          </div>
+      </div>
+      <div class="gallery"style="width: 70%;margin: auto;">
+              <img src="../cover-images/medium.png" onclick="lightbox(0)" />
+              <img src="../cover-images/mycometrics.png" onclick="lightbox(1)"/>
+              <img src="../cover-images/korean.png" onclick="lightbox(2)" />
+              <img src="../cover-images/bitcamp.png" onclick="lightbox(3)" />
+              <img src="../cover-images/ideate19.png" onclick="lightbox(4)" />
+              <img src="../cover-images/mpower.png" onclick="lightbox(5)"/>
+              <img src="../cover-images/ideate18.jpg" onclick="lightbox(6)"/>
+              <img src="../cover-images/hd-vid.gif" onclick="lightbox(7)"/>
+              <img src="../cover-images/catalyst.png" onclick="lightbox(8)"/>
+              <img src="../cover-images/carmadillo.png" onclick="lightbox(9)"/>
+              <img src="../cover-images/gradescope.png" onclick="lightbox(10)"/>
+              <img src="../cover-images/constellations.png" onclick="lightbox(11)"/>
+      </div>
+        <!-- END GRID -->
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: false});
+        sr.reveal('.reveal', { duration: 1000, distance: '50px', useDelay: 'once',scale: 1,});
+        sr.reveal(' .column', 100);
+    </script>
+
+
+  </body>
+</html>

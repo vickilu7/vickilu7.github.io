@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body{
-  background-color: #fdfdfd;
+  background-color: #f5f8fa;
 }
 
 /*-------------------NAVIGATION BAR-------------------*/
@@ -119,13 +120,32 @@ body{
     transition: .5s ease;
 }
 
-/*-------------------GENERAL PAGES-------------------*/
+/*-------------------GENERAL/PROJECT PAGES-------------------*/
 .content-container{
   margin: 30px 45px;
+  display: block;
+  justify-content: center;
 }
 .content{
   display: flex;
   flex-wrap: wrap;
+}
+
+.project-title-section{
+  padding-top: 100px;
+  overflow-x: visible;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.project-section{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 /*-------------------ABOUT PAGE-------------------*/
@@ -152,7 +172,7 @@ body{
 }
 
 .column, .about-column{ /*about page look into life */
-  width: 300px;
+  width: 32%;
   margin: 5px 5px 30px 5px;
   position: relative;
   display: flex;
@@ -161,16 +181,6 @@ body{
 
 
 
-/*-------------------6/7 WORKing-------------------*/
-/*project page one: more photos*/
-.fullscreen{
-  margin: 45px 45px 0 45px;
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  background-color: #EBECF0;
-  height: 700px;
-}
 
 
 .content-container iframe{ /*BITESIZE PROTOTYPE*/
@@ -179,139 +189,7 @@ body{
   width: 75%;
 }
 
-
-.content-image{
-  display: flex;
-  justify-content: flex-end;
-  background-color: #FD6D6D; /*pink*/
-}
-
-
-.subheader {
-  /*background-color: #5995DA;*/
-  width: 300px;
-  flex: 0.5;
-  font-family: 'OpenSans', sans-serif;
-  line-height: 15px;
-
-}
-.subheader strong{
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  color: #333;
-}
-
-.subheader em{
-  font-weight: bold;
-}
-
-.subheader b{
-  font-weight: bold;
-}
-
-
-/*project page two: more text */
-.image{
-  display: flex;
-  justify-content: center;
-}
-.header{
-  display: block;
-  justify-content: center;
-
-}
-
-
-
-.subtitle-play{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 28px;
-  /*color:#5D6063;*/
-  color: #333;
-  width: 35%;
-  text-align: center;
-  margin: 50px auto;
-}
-
-.project_paragraph{
-  width: 50%;
-	margin: 20px auto 20px auto;
-	line-height: 29px;
-  color: #5D6063;
-}
-
-.project_paragraph subheader{
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 2.5px;
-  font-size: 14px;
-  color: rgba(93, 96, 99, .30);
-  text-align: left;
-  text-transform: uppercase;
-}
-.project_header{
-  font-weight: 500;
-  font-size: 24px;
-  width: 50%;
-  margin: 40px auto;
-}
-
-.space{
-  height: 60px;
-}
-/*cover pages*/
-.grid-row {
-  height: 350px;
-  display: flex;
-  justify-content: center;
-}
-.overlay{
-  opacity: 0.75;
-  transition: 2s ease;
-  background-color:#ffffff;
-}
-
-
-.text {
-  position: absolute;
-  left: 15px;
-  top: 15px;
-
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #000;
-}
-.text strong{
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: none;
-}
-
-
-
-/*medium page and lose the snooze 3 columns*/
-.photo-grid-container {
-  display: flex;
-  justify-content: center;
-}
-.photo-grid {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.photo-grid-item {
-  width: 350px;
-}
-
-
-
-
-
+/*WHAT ARE THESE???-------*/
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -328,26 +206,6 @@ body{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-
-/*photo grid*/
-.rowrow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.columncolumn {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.columncolumn img {
-  margin-top: 8px;
-  vertical-align: middle;
-  max-width: 50%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

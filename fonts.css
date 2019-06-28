@@ -87,7 +87,7 @@ p a:hover{
 
 }
 
-.subtitle, .title subtitle, .small-title subtitle, .caption subtitle{
+.subtitle, .title subtitle, .caption subtitle{
   font-family: 'Apercu Mono Regular';
   font-weight: 700;
   letter-spacing: 1px;
@@ -98,6 +98,20 @@ p a:hover{
 }
 
 .small-title subtitle{ /*blue box styling*/
+  margin: 3px 3px 3px 0;
+  font-size: .75rem;
+  padding: 5px 7px;
+  border-radius: 2px;
+  color: #482CF6;
+  border: 1px solid #482CF6;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Apercu Mono Regular';
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.tags{
   margin: 3px 3px 3px 0;
   font-size: .75rem;
   padding: 2px 7px;
@@ -111,4 +125,23 @@ p a:hover{
   font-weight: 500;
   font-size: 32px;
   text-align: left;
+}
+
+/*-------------------PROJECT PAGE-------------------*/
+.project-text {
+font-size: 16px;
+letter-spacing: 0.5px;
+line-height: 28px;
+margin-top: 28px;
+margin-bottom: 28px;
+letter-spacing: -0.3px;
+-webkit-font-smoothing: antialiased;
+}
+
+.h3 {
+margin-top: 15px;
+margin-bottom: 30px;
+font-weight: 300;
+font-size: 24px;
+text-align: center;
 }

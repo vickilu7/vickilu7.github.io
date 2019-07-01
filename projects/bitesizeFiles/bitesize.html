@@ -31,13 +31,14 @@
 
       <div class='project-section'>
         <p class='small-title'><subtitle>Problem</subtitle></p>
-        <p class='h3'>
+        <p class='h3' style='text-align: center;'>
           How might we promote positive change among large organizations by using technology to increase efficiency and education?
         </p>
 
-        <div style='background-color: #333;height: 400px;border-radius: 15px;'></div>
+        <div style='background-color: #333;height: 400px;border-radius: 15px; margin-top:15px;margin-bottom:15px;'></div>
 
       </div>
+
       <div class='project-section'>
         <p class='small-title' style='text-align: left;'><subtitle>The Challenge</subtitle></p>
         <p>Hierarchies and corporate policies in large organizations strongly dissuade micro-innovation.
@@ -46,6 +47,7 @@
           change in their workplace.
         </p>
       </div>
+
       <div class='project-section'>
         <p class='small-title' style='text-align: left;'><subtitle>Project Vision</subtitle></p>
         <p>The final product is a task-oriented web application that can help anyone fix problems they
@@ -55,20 +57,219 @@
         </p>
       </div>
 
+      <button class="accordion">Click to view design process</button>
+      <div class="panel">
+        <div class='project-section' id='Understand'>
+          <p class='small-title' style='text-align: left;'><subtitle>Understand</subtitle></p>
+          <p class='h3'>Quality improvement (QI) consists of systematic and continuous actions that lead to measurable
+            improvement and is an integral component to delivering high-quality healthcare. </p>
+          <p>However, QI is challenging, and with mounting day-to-day duties, healthcare workers struggle to find the time
+            to learn proper skills to successfully affect change in their workplace.</p>
+          <p>Duke Cancer Institute works closely with Duke University hospital system in both research as
+            well as project initiatives. BiteSizeQI was created to teach and foster micro-innovation within
+            large organizations, such as Duke hospital, which promotes small and positive changes.
+            The best ideas don’t always come from the top and, when given the right tools, all staff
+            can drive meaningful change. I worked as a UI/UX designer with a team of quality improvement
+            experts, clinicians, programmers and researchers at Duke Cancer Institute to create BiteSize QI.
+          </p>
+
+          <div style='background-color: #333;height: 400px;border-radius: 15px; margin-top:15px;margin-bottom:15px;'></div>
+        </div>
+
+        <div class='project-section' id='Role'>
+          <p class='small-title' style='text-align: left;'><subtitle>My Role</subtitle></p>
+          <p>We actually joined in the middle of the project, so interest for Bitesize QI was already high,
+            initial research was done, and an MVP had already been created. However, this prototype was basically
+            just a series of videos (think required company on-boarding videos!) to watch and then a long proposal
+            form to fill out afterwards. </p>
+          <p>Our job was to evaluate the specific needs of various users, redesign the information architecture,
+            convey key ideas in initial mockups, execute high-fidelity designs, and ultimately design a functional experience.
+          </p>
+        </div>
+
+        <div class='project-section' id='Needs'>
+          <p class='small-title' style='text-align: left;'><subtitle>Needs</subtitle></p>
+          <p class='h3'>Bitesize QI needed a redesigned user experience that would save time and streamline the purpose of the tool.</p>
+          <p>These are the key things we established were needed to accomplish this:</p>
+          <p><b>1. Navigation:</b> Implement a seamless navigation system that demonstrates progress indication and how to jump back in</p>
+          <p><b>2. Experience:</b> Create an intuitive web experience that eliminates unnecessary steps and is supported by smooth interactions</p>
+          <p><b>3. Learning:</b> Highlight essential features through contextual help that improves understanding of the product</p>
+          </p>
+        </div>
+
+        <div class='project-section' id='Research'>
+          <p class='small-title' style='text-align: left;'><subtitle>Research</subtitle></p>
+          <p>Looking at the initial research, we separated user types into two categories: Primary users, like employees who would
+            benefit directly but currently aren’t actively engaged in quality improvement decisions. Secondary users, like
+            management staff who ultimately make these decisions, but aren’t well informed or have the time to do it well.
+            Using this information, we developed <b>user personas</b>.</p>
+          <img src='user-persona-2.png' style='width: 100%;'/>
+          <img src='user-persona-1.png' style='width: 100%;'/>
+          <p>We restructured the <b>information architecture</b> centered around a dashboard navigation that walks
+            the users through step-by-step in order to minimize attention loss as well as information loss.
+            In order to move onto the next video and lesson, you need to complete the activity, which also self populates the blueprint.
+          </p>
+          <img src='IA.png' style='width: 100%;'/>
+        </div>
+
+        <div class='project-section' id='Visual'>
+          <p class='small-title' style='text-align: left;'><subtitle>Visual</subtitle></p>
+          <p>We started out with a few visual concepts and followed up during a review with the rest of the team.
+            A lot of ideas were scrapped and I had to give up on gradients :( One of the most important skills
+            to learn as a designer is how to move on from your designs and it’s definitely something i’m still working on.
+            Based on a comment from a shareholder, we settled on the third neutral concept with a clean feel and
+            pops of color to keep attention on the tasks.
+          </p>
+          <p class='h3'>"The tool should have a professional/corporate approach while integrating the colorful and cartoonish nature of the videos.”
+          </p>
+          <img src='visual-1.png' style='width: 100%;'/>
+          <img src='visual-2.png' style='width: 100%;'/>
+          <img src='visual-3.png' style='width: 100%;'/>
+        </div>
+      </div>
 
 
 
-        <!--<iframe src="https://marvelapp.com/e0da0ie?emb=1&iosapp=false&frameless=false" width="1920" height="570"
-        allowTransparency="true" frameborder="0"></iframe>-->
+      <div class='project-section' id='How'>
+        <p class='small-title' style='text-align: left;'><subtitle>How it Works</subtitle></p>
+        <p class='h3'>BiteSize QI is a task-oriented web-based application that helps users identify a problem or deficiency in
+          their workplace, and then walks the user through the fundamentals of quality improvement to help fix the problem.
+        </p>
 
-        <div class='subtitle'><a href='../../index.html#work'>Back to Work</a></div>
-        <div class='space'></div>
+        <!-- CAROUSEL FOR HOW IT WORKS -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <video controls="controls" autoplay muted loop width="800" name="welcome-mov" src="welcome.mov"></video>
+            <p>Upon logging in, users are brought straight to a welcome video and can view their progression along
+              the side navigation</p>
+          </div>
+
+          <div class="mySlides fade">
+            <video controls="controls" autoplay muted loop width="800" name="solutions-mov" src="solutions.mov"></video>
+            <p>Users will work their way through a series of short videos that build their quality improvement skills.
+              Concepts include how to create problem statements, effective timelines, and clear solutions.</p>
+            <p>After completing a video, the system then engages the user to apply the skills they have
+              learned by completing simple quality improvement activities.</p>
+          </div>
+
+          <div class="mySlides fade">
+            <video controls="controls" autoplay muted loop width="800" name="toggle-mov" src="toggle.mov"></video>
+            <p>I also noticed the excessive use of modal windows in the original prototype and felt it was inconvenient
+              for users to constantly open and exit out of them. I created a toggle function on the activity screens
+              to show example inputs for the users to get an idea of what they should be writing.</p>
+          </div>
+
+          <div class="mySlides fade">
+            <video controls="controls" autoplay muted loop width="800" name="dashboard-mov" src="dashboard.mov"></video>
+            <p>After the initial log-in, once a user logs in again, they will be brought directly to their dashboard.
+              There, they can pick up where they left off, access the other activities, and view their work-in-progress
+              project blueprint.</p>
+          </div>
+
+          <div class="mySlides fade">
+            <video controls="controls" autoplay muted loop width="800" name="blueprint-mov" src="blueprint.mov"></video>
+            <p>As a user completes each activity, the system records the progress made on the dashboard and builds a
+              guide (Project Blueprint) for implementing a solution to the problem using the responses from the activities.</p>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="videos.png" style="width:100%">
+            <p>Videos are housed separately within the sidebar so users can refresh their memory of a video at any time.</p>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot active-dot" onclick="currentSlide(1)"></span>
+          <span class="dot active-dot" onclick="currentSlide(2)"></span>
+          <span class="dot active-dot" onclick="currentSlide(3)"></span>
+          <span class="dot active-dot" onclick="currentSlide(4)"></span>
+          <span class="dot active-dot" onclick="currentSlide(5)"></span>
+          <span class="dot active-dot" onclick="currentSlide(6)"></span>
+        </div>
+
+      </div>
+
+      <div class='project-section' id='Prototype'>
+        <p>Or you can choose to poke around the prototype for yourself!</p>
+        <iframe src="https://marvelapp.com/e0da0ie?emb=1&iosapp=false&frameless=false" width="1920" height="450"
+        allowTransparency="true" frameborder="0"></iframe>
+      </div>
+
+      <div class='project-section' id='Outcomes'>
+        <p class='small-title' style='text-align: left;'><subtitle>Outcomes and Impact</subtitle></p>
+        <p>BiteSizeQI is currently being used as the primary mode of quality improvement at Duke University Hospital,
+          which is home to over 300 physicians and researchers. It is also being implemented in several neighboring
+          healthcare systems as well as local businesses. We've received positive feedback regarding the ease and
+          intuitive nature of the web-app from several users and I actually worked on another app with Duke Cancer
+          Institute the following semester!</p>
+      </div>
+    </div>
+
+    <div class='bottom-nav'>
+      <div class='prev-proj'><a href='../../index.html#work'><subtitle>&#8592; Previous Project</subtitle></a></div>
+      <div class='next-proj'><a href='../../index.html#work'>Next Project &#8594;</a></div>
     </div>
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-        <script>
+    <script>
         window.sr = ScrollReveal({ reset: false});
         sr.reveal('.reveal', { duration: 1000, distance: '50px', useDelay: 'once',scale: 1,});
-        </script>
+    </script>
+    <!--JS FOR CAROUSEL------->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active-dot";
+      }
+    </script>
+    <!--JS FOR EXPAND SHOW DESIGN PROCESS------->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
   </body>
 </html>

@@ -41,8 +41,8 @@ body {
 }
 
 p {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 30px;
 }
@@ -72,13 +72,6 @@ p a:hover{
 }
 
 /*-------------------WORK PAGE GRID-------------------*/
-.title{
-  font-weight: bold;
-  font-size: 50px;
-  text-align: center;
-  margin: 30px 0 30px 0;
-}
-
 .small-title{
   font-weight: 700;
   font-size: 24px;
@@ -128,20 +121,16 @@ p a:hover{
 }
 
 /*-------------------PROJECT PAGE-------------------*/
-.project-text {
-font-size: 16px;
-letter-spacing: 0.5px;
-line-height: 28px;
-margin-top: 28px;
-margin-bottom: 28px;
-letter-spacing: -0.3px;
--webkit-font-smoothing: antialiased;
+.title{
+  font-weight: bold;
+  font-size: 42px;
+  text-align: center;
+  margin: 15px 0;
 }
 
 .h3 {
 margin-top: 15px;
-margin-bottom: 30px;
+margin-bottom: 15px;
 font-weight: 300;
 font-size: 24px;
-text-align: center;
 }

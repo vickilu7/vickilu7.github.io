@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Medium | Vicki Lu</title>
+    <link rel='stylesheet' href='../../stylesheet.css'/>
+    <link rel="stylesheet" type="text/css" href='../../fonts.css'/>
+    <link rel="icon" type="image/png" href="../../../cover-images/fav.png">
+  </head>
+
+  <body>
+    <!--NAVIGATION BAR-->
+      <div class='navbar-container'>
+        <div class='menu'>
+          <div class='logo'><a href='../../index.html'>Vicki Lu</a></div>
+          <div class='links'>
+            <div class='work'><a href='../../index.html'>work</a></div>
+            <div class='play'><a href='../fun.html'>fun</a></div>
+            <div class='about'><a href='../../about.html'>me</a></div>
+            <div class='resume'><a href='../../Resume.pdf' target='_blank'>resume</a></div>
+          </div>
+        </div>
+      </div>
+
+    <div class='content-container reveal'>
+      <div class='project-title-section'>
+        <div class='title'>Medium App</br> New Feature Concept</div>
+        <p>Side Project</br>Timeline: 1 week</p>
+      </div>
+
+      <div class='project-section'>
+        <p class='small-title'><subtitle>Problem</subtitle></p>
+        <p class='h3' style='text-align: center;'>
+          How can we create a more robust way for users to bookmark future reading material on Medium?
+        </p>
+
+        <img src='medium-2.png' style='width: 100%;'/>
+      </div>
+
+      <div class='project-section'>
+        <p class='small-title' style='text-align: left;'><subtitle>The Challenge</subtitle></p>
+        <p>As of now, you can only either save articles you liked to your “Bookmarks” or to your “Claps”–
+          offering only two lists to differentiate your articles.
+        </p>
+      </div>
+
+      <div class='project-section'>
+        <p class='small-title' style='text-align: left;'><subtitle>Project Vision</subtitle></p>
+        <p>Create a feature that allows users to categorize their favorite articles into different
+          categories like Pinterest boards or Youtube playlists. In the case of Medium, I decided to
+          categorize the bookmarks into “shelves”.
+        </p>
+      </div>
+
+      <div class='project-section' id='Inspiration'>
+        <p class='small-title' style='text-align: left;'><subtitle>Inspiration</subtitle></p>
+        <p>These “shelves” act as the topics in which users can sort their articles, much like how you’d
+          place similar genre books near each other on a bookshelf. The way the bookmarking looks on the
+          home page is heavily inspired by Airbnb. I felt that the clean and straightforward look of the
+          Save to List modal window fit in quite well with Medium’s overall brand.
+        </p>
+
+        <img src='inspo.png' style='width: 100%;'/>
+      </div>
+
+      <div class='project-section' id='Wireframes'>
+        <p class='small-title' style='text-align: left;'><subtitle>Wireframes</subtitle></p>
+        <p class='h3'>Lo-fidelity Wireframes</p>
+        <p>Quick sketch of the Home and Bookmarks page, which now displays a bookcase instead of
+          your list of bookmarked articles.</p>
+        <img src='lofi.jpg' style='width: 100%;'/>
+
+        <p class='h3'>High-fidelity Wireframes</p>
+        <p>I recreated the Medium homepage using Adobe XD and Sketch to be more conscious of how my new feature would fit with the
+          existing look and feel. The following pictures show the three groups of pages I made changes
+          to for the new bookmarking function.
+        </p>
+        <img src='home.png' style='width: 100%;'/>
+        <img src='shelf.png' style='width: 100%;'/>
+        <img src='bookmarks.png' style='width: 100%;'/>
+        <img src='medium.png' style='width: 100%;'/>
+      </div>
+
+      <div class='project-section' id='Prototype'>
+        <p class='small-title' style='text-align: left;'><subtitle>Prototyping</subtitle></p>
+        <p>The diagram below shows the flow, which I used a lot to ensure that all the
+          functions of the new bookmarking feature would seem natural and intuitive to the user.
+        </p>
+        <img src='flow.png' style='width: 100%;'/>
+        <p>Here's the prototype in action!</p>
+        <video controls="controls" autoplay muted loop height="800" name="medium-mov" src="medium-proto.mov"></video>
+      </div>
+
+      <div class='project-section' id='Future'>
+        <p class='small-title' style='text-align: left;'><subtitle>Future</subtitle></p>
+        <p>Something I did forget to add, but would be great to have, is an option to <b>share your shelf</b>.
+          Medium is an inherently social platform that allows anyone to write and share ideas, so I think
+          it’s always a good idea to keeping thinking about the ways we can connect people with people.</p>
+      </div>
+
+    </div>
+
+    <div class='bottom-nav'>
+      <div class='prev-proj'><a href='../hackdukeFiles/hackduke.html'><subtitle>&#8592; Previous Project</subtitle></a></div>
+      <div class='next-proj'><a href='#'>Next Project &#8594;</a></div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: false});
+        sr.reveal('.reveal', { duration: 1000, distance: '50px', useDelay: 'once',scale: 1,});
+    </script>
+    <!--JS FOR CAROUSEL------->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active-dot";
+      }
+    </script>
+    <!--JS FOR EXPAND SHOW DESIGN PROCESS------->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+  </body>
+</html>

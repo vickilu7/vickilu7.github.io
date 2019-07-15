@@ -52,8 +52,8 @@ body{
 
 /*-------------------TITLE SCREEN-------------------*/
 .landing{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 300px;
+  padding-bottom: 150px;
   width: 80%;
   margin: auto;
 }

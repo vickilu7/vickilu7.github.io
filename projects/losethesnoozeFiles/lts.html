@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Lose the Snooze | Vicki Lu</title>
+    <link rel='stylesheet' href='../../stylesheet.css'/>
+    <link rel="stylesheet" type="text/css" href='../../fonts.css'/>
+    <link rel="icon" type="image/png" href="../../../cover-images/fav.png">
+  </head>
+
+  <body>
+    <!--NAVIGATION BAR-->
+      <div class='navbar-container'>
+        <div class='menu'>
+          <div class='logo'><a href='../../index.html'>Vicki Lu</a></div>
+          <div class='links'>
+            <div class='work'><a href='../../index.html'>work</a></div>
+            <div class='play'><a href='../fun.html'>fun</a></div>
+            <div class='about'><a href='../../about.html'>me</a></div>
+            <div class='resume'><a href='../../VickiLu-Resume.pdf' target='_blank'>resume</a></div>
+          </div>
+        </div>
+      </div>
+
+    <div class='content-container reveal'>
+      <div class='project-title-section'>
+        <div class='title'>Lose the Snooze</div>
+        <p>Role: Programming and UI/UX Design</br>Collaborators: Faraz Yashar & Angela Moon</p>
+      </div>
+
+
+      <div class='project-section' id='Inspiration'>
+        <p>Many alarms allow us to hit snooze as many times as we wish. We've created a simple alarm
+          clock app that will actually wake you up. This app was created as part of the New Member
+          Education process for <a href='https://dukecatalyst.co/' target="_blank">Catalyst</a> (Duke social and
+          pre-professional tech organization) and was coded on XCode using JavaScript.
+        </p>
+        <p>The camera uses image recognition to turn off alarm so we thought it'd be fun to make
+          users point it at a toilet– forcing them to go to their bathroom and get out of bed.
+          Check out our code on <a href='https://github.com/fny/lose-the-snooze' target='_blank'>Github</a>.
+      </div>
+
+      <img src='wires.png' style='width: 80%; display: block;margin: auto;'/>
+
+    </div>
+
+    <div class='bottom-nav'>
+      <div class='prev-proj'><a href='../hackdukeFiles/hackduke.html'><subtitle>&#8592; Previous Project</subtitle></a></div>
+      <div class='next-proj'><a href='../mediumFiles/medium.html'>Next Project &#8594;</a></div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: false});
+        sr.reveal('.reveal', { duration: 1000, distance: '50px', useDelay: 'once',scale: 1,});
+    </script>
+    <!--JS FOR CAROUSEL------->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active-dot";
+      }
+    </script>
+    <!--JS FOR EXPAND SHOW DESIGN PROCESS------->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+  </body>
+</html>

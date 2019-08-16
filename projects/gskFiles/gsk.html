@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>GSK | Vicki Lu</title>
+    <link rel='stylesheet' href='../../stylesheet.css'/>
+    <link rel="stylesheet" type="text/css" href='../../fonts.css'/>
+    <link rel="icon" type="image/png" href="../../../cover-images/fav.png">
+  </head>
+
+  <body>
+    <!--NAVIGATION BAR-->
+      <div class='navbar-container'>
+        <div class='menu'>
+          <div class='logo'><a href='../../index.html'>Vicki Lu</a></div>
+          <div class='links'>
+            <div class='work'><a href='../../index.html'>work</a></div>
+            <div class='play'><a href='../fun.html'>fun</a></div>
+            <div class='about'><a href='../../about.html'>me</a></div>
+            <div class='resume'><a href='../../VickiLu-Resume.pdf' target='_blank'>resume</a></div>
+          </div>
+        </div>
+      </div>
+
+    <div class='content-container reveal'>
+      <div class='project-title-section'>
+        <div class='title'>GSK Design</div>
+        <p>Product Design Internship <br/>Time: 12 weeks</p>
+      </div>
+
+
+      <div class='project-section' id='Inspiration'>
+        <p>During Summer 2019 I had the opportunity to intern with the GlaxoSmithKline Platforms team.
+          I can’t show work from my projects or give any details due to NDA,
+          but here’s some of what I worked on throughout the internship:
+        </p>
+        <p>&bull; A skills progression tool for professional development within teams
+          <br/>&bull; A <a href='https://medium.com/rangle-io/what-is-a-design-system-7a3d63edfcf7' target='_blank'>
+            design system</a> that streamlines the product development process
+        </p>
+      </div>
+
+      <div class='project-section'>
+        <p class='small-title' style='text-align: left;'><subtitle>Process</subtitle></p>
+        <p class='h3'>Skills Progression Tool</p>
+        <p>For my intern project, I started with conceptualizing and exploring different directions.
+          Through user research practices and design reviews, I iterated and was able to bring a
+          proof-of-concept to life with wireframe flows, detailed hi-fidelity mocks, and clickthrough
+          prototypes.
+        </p>
+
+        <p class='h3'>Design System</p>
+        <p>
+          This team project involved working closely with our Brand team and
+          I'm glad I had the opportunity to be a part of the design system's first phase.
+          I helped out with user validation testing, conducted external audits,
+          defined a grid system, and wrote documentation for the system file use.
+        </p>
+      </div>
+
+      <p class=h3 style='text-align: center;'>To learn more about my experience,
+        reach out to me at <a href='mailto:vicki.lu.777@gmail.com'>vicki.lu.777@gmail.com</a>!</p>
+
+    </div>
+
+    <div class='bottom-nav'>
+      <div class='prev-proj'><a href='../mediumFiles/medium.html'><subtitle>&#8592; Previous Project</subtitle></a></div>
+      <div class='next-proj'><a href='../bitesizeFiles/bitesize.html'>Next Project &#8594;</a></div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: false});
+        sr.reveal('.reveal', { duration: 1000, distance: '50px', useDelay: 'once',scale: 1,});
+    </script>
+    <!--JS FOR CAROUSEL------->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active-dot";
+      }
+    </script>
+    <!--JS FOR EXPAND SHOW DESIGN PROCESS------->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+  </body>
+</html>
